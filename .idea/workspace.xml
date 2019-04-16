@@ -2,14 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6bc147e0-3cec-469a-a32b-bdc4c94e2860" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/okkpp/code/gen/GenMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/okkpp/code/gen/database/Colunm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/okkpp/code/gen/database/DbKit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/okkpp/code/gen/database/TypeConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/okkpp/code/gen/util/StringUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/model.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/okkpp/code/gen/BaseGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/okkpp/code/gen/BaseGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/okkpp/code/gen/GenMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/okkpp/code/gen/GenMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/okkpp/code/gen/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/okkpp/code/gen/database/Colunm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/okkpp/code/gen/database/Colunm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/okkpp/code/gen/database/DbKit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/okkpp/code/gen/database/DbKit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/okkpp/code/gen/model/Field.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/okkpp/code/gen/model/ModelGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/okkpp/code/gen/model/ModelGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/okkpp-code-gen.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/okkpp/code/gen/template/TemplateFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/okkpp/code/gen/template/TemplateFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/okkpp/code/gen/util/PathKit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/okkpp/code/gen/util/PathKit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/test.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/test.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/okkpp/code/gen/BaseGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/okkpp/code/gen/BaseGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/okkpp/code/gen/database/Colunm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/okkpp/code/gen/database/Colunm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/okkpp/code/gen/database/DbKit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/okkpp/code/gen/database/DbKit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/okkpp/code/gen/model/Field.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/okkpp/code/gen/model/ModelGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/okkpp/code/gen/model/ModelGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/okkpp/code/gen/template/TemplateFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/okkpp/code/gen/template/TemplateFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/okkpp/code/gen/util/PathKit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/okkpp/code/gen/util/PathKit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test.ftl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,101 +35,27 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/okkpp/code/gen/util/PathKit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/okkpp/code/gen/template/TemplateFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/okkpp/code/gen/database/DbKit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="38" column="55" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#924#925#0" expanded="true" />
-                <element signature="e#957#958#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/okkpp/code/gen/database/Colunm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
-              <folding>
-                <element signature="e#197#198#0" expanded="true" />
-                <element signature="e#225#226#0" expanded="true" />
-                <element signature="e#267#268#0" expanded="true" />
-                <element signature="e#301#302#0" expanded="true" />
-                <element signature="e#332#333#0" expanded="true" />
-                <element signature="e#359#360#0" expanded="true" />
-                <element signature="e#399#400#0" expanded="true" />
-                <element signature="e#431#432#0" expanded="true" />
-                <element signature="e#466#467#0" expanded="true" />
-                <element signature="e#497#498#0" expanded="true" />
-                <element signature="e#546#547#0" expanded="true" />
-                <element signature="e#586#587#0" expanded="true" />
-                <element signature="e#619#620#0" expanded="true" />
-                <element signature="e#650#651#0" expanded="true" />
-                <element signature="e#695#696#0" expanded="true" />
-                <element signature="e#728#729#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/okkpp/code/gen/model/ModelGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#411#427#0" expanded="true" />
-                <element signature="e#368#384#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/okkpp/code/gen/GenMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+            <state relative-caret-position="299">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/model.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -137,15 +78,20 @@
         <option value="$PROJECT_DIR$/src/main/java/okkpp/code/gen/util/TemplateFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/okkpp/code/gen/ModelGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/okkpp/code/gen/model/Field.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/test.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/okkpp/code/gen/Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/okkpp/code/gen/util/PathKit.java" />
-        <option value="$PROJECT_DIR$/src/main/java/okkpp/code/gen/BaseGenerator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/okkpp/code/gen/template/TemplateFactory.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/okkpp/code/gen/template/TemplateFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/okkpp/code/gen/util/StringUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/okkpp/code/gen/database/TypeConvert.java" />
         <option value="$PROJECT_DIR$/src/main/java/okkpp/code/gen/database/Colunm.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/okkpp/code/gen/util/PathKit.java" />
         <option value="$PROJECT_DIR$/src/main/java/okkpp/code/gen/database/DbKit.java" />
         <option value="$PROJECT_DIR$/src/main/java/okkpp/code/gen/model/ModelGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/okkpp/code/gen/BaseGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/model.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/test.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/okkpp/code/gen/GenMain.java" />
       </list>
     </option>
@@ -276,13 +222,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DbKit">
-    <configuration name="BaseGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="okkpp.code.gen.BaseGenerator" />
+  <component name="RunManager" selected="Application.GenMain">
+    <configuration name="DbKit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="okkpp.code.gen.database.DbKit" />
       <module name="okkpp-code-gen" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="okkpp.code.gen.*" />
+          <option name="PATTERN" value="okkpp.code.gen.database.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -290,12 +236,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DbKit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="okkpp.code.gen.database.DbKit" />
+    <configuration name="GenMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="okkpp.code.gen.GenMain" />
       <module name="okkpp-code-gen" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="okkpp.code.gen.database.*" />
+          <option name="PATTERN" value="okkpp.code.gen.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -329,12 +275,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TemplateFactory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="okkpp.code.gen.template.TemplateFactory" />
+    <configuration name="StringUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="okkpp.code.gen.util.StringUtil" />
       <module name="okkpp-code-gen" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="okkpp.code.gen.template.*" />
+          <option name="PATTERN" value="okkpp.code.gen.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -342,59 +288,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="okkpp-code-gen" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <module name="okkpp-code-gen" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GenMain" />
         <item itemvalue="Application.DbKit" />
+        <item itemvalue="Application.StringUtil" />
         <item itemvalue="Application.ModelGenerator" />
-        <item itemvalue="Application.BaseGenerator" />
-        <item itemvalue="Application.TemplateFactory" />
         <item itemvalue="Application.PathKit" />
       </list>
     </recent_temporary>
@@ -412,18 +311,19 @@
       <workItem from="1555143249027" duration="5545000" />
       <workItem from="1555154581601" duration="6608000" />
       <workItem from="1555305904548" duration="3527000" />
+      <workItem from="1555375310923" duration="13904000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15680000" />
+    <option name="totallyTimeSpent" value="29584000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15831557" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945828" visible="true" weight="0.15991472" />
+      <window_info id="Structure" order="1" sideWeight="0.5005417" side_tool="true" weight="0.15991472" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
@@ -459,47 +359,7 @@
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/io/OutputStreamWriter.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Test.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/String.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/okkpp/code/gen/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-          <folding>
-            <element signature="e#125#126#0" expanded="true" />
-            <element signature="e#152#153#0" expanded="true" />
-            <element signature="e#222#223#0" expanded="true" />
-            <element signature="e#254#255#0" expanded="true" />
-            <element signature="e#283#284#0" expanded="true" />
-            <element signature="e#326#327#0" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/test.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="21" lean-forward="true" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://E:/maven/repository/org/freemarker/freemarker/2.3.28/freemarker-2.3.28-sources.jar!/freemarker/template/Configuration.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/okkpp/code/gen/util/PathKit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/okkpp/code/gen/template/TemplateFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -507,24 +367,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/okkpp/code/gen/util/StringUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#109#110#0" expanded="true" />
+            <element signature="e#135#136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/sql/Driver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="89" column="57" lean-forward="true" selection-start-line="89" selection-start-column="57" selection-end-line="89" selection-end-column="57" />
+        <state relative-caret-position="197">
+          <caret line="89" column="15" selection-start-line="89" selection-start-column="15" selection-end-line="89" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.42/mysql-connector-java-5.1.42.jar!/com/mysql/jdbc/NonRegisteringDriver.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="299" column="56" lean-forward="true" selection-start-line="299" selection-start-column="56" selection-end-line="299" selection-end-column="56" />
+        <state relative-caret-position="299">
+          <caret line="279" column="74" selection-start-line="279" selection-start-column="66" selection-end-line="279" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/sql/DriverManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="663" column="57" selection-start-line="663" selection-start-column="57" selection-end-line="663" selection-end-column="57" />
+        <state relative-caret-position="235">
+          <caret line="663" column="56" selection-start-line="663" selection-start-column="56" selection-end-line="663" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -535,68 +409,138 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/okkpp/code/gen/database/TypeConvert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/okkpp/code/gen/database/Colunm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+        <state relative-caret-position="1219">
+          <caret line="81" column="18" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/okkpp/code/gen/template/TemplateFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
           <folding>
-            <element signature="e#197#198#0" expanded="true" />
-            <element signature="e#225#226#0" expanded="true" />
-            <element signature="e#267#268#0" expanded="true" />
-            <element signature="e#301#302#0" expanded="true" />
-            <element signature="e#332#333#0" expanded="true" />
-            <element signature="e#359#360#0" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#466#467#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#619#620#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#695#696#0" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="626" column="29" selection-start-line="626" selection-start-column="29" selection-end-line="626" selection-end-column="29" />
+          <folding>
+            <element signature="e#44970#44971#0" expanded="true" />
+            <element signature="e#45051#45052#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/Properties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="121" column="6" selection-start-line="121" selection-start-column="6" selection-end-line="121" selection-end-column="6" />
+          <folding>
+            <element signature="e#4787#4788#0" expanded="true" />
+            <element signature="e#4813#4814#0" expanded="true" />
+            <element signature="e#4990#4991#0" expanded="true" />
+            <element signature="e#5030#5031#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/okkpp/code/gen/database/DbKit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="38" column="55" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
+        <state relative-caret-position="184">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#924#925#0" expanded="true" />
-            <element signature="e#957#958#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/okkpp/code/gen/util/PathKit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="43" lean-forward="true" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+          <folding>
+            <element signature="e#153#154#0" expanded="true" />
+            <element signature="e#206#207#0" expanded="true" />
+            <element signature="e#735#736#0" expanded="true" />
+            <element signature="e#769#770#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="20" lean-forward="true" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/okkpp/code/gen/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/test.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="27" lean-forward="true" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/okkpp/code/gen/model/ModelGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/okkpp/code/gen/BaseGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+        <state relative-caret-position="275">
+          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/okkpp/code/gen/GenMain.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/model.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        <state relative-caret-position="46">
+          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/okkpp/code/gen/model/ModelGenerator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/okkpp/code/gen/GenMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+        <state relative-caret-position="299">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#411#427#0" expanded="true" />
-            <element signature="e#368#384#0" expanded="true" />
           </folding>
         </state>
       </provider>

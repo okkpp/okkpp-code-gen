@@ -1,33 +1,24 @@
 package okkpp.code.gen.model;
 
-import freemarker.template.TemplateException;
 import okkpp.code.gen.BaseGenerator;
 import okkpp.code.gen.database.Colunm;
+import okkpp.code.gen.database.DbKit;
 
-import java.io.IOException;
-import java.util.Arrays;
+import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Properties;
 
 public class ModelGenerator extends BaseGenerator {
+
+    public ModelGenerator(Properties properties) throws SQLException {
+        super(properties);
+        setColumns(DbKit.me().showColumns(properties.getProperty("tableName")));
+    }
 
     public void setColumns(List<Colunm> columns) {
         HashMap<String, Object> data = new HashMap<String, Object>();
         data.put("columns", columns);
         super.setData(data);
-    }
-
-    public void setFields(List<Field> fields){
-        HashMap<String, Object> data = new HashMap<String, Object>();
-        data.put("fields", fields);
-        super.setData(data);
-    }
-
-    public static void main(String[] args) throws IOException, TemplateException {
-
-        ModelGenerator modelGenerator = new ModelGenerator();
-        modelGenerator.config("test.ftl", "okkpp.code.gen", "Test");
-        modelGenerator.setFields(Arrays.asList(new Field("name","String"), new Field("number", "Integer")));
-        modelGenerator.generate(modelGenerator.getFileWriter());
     }
 }

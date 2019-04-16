@@ -17,13 +17,26 @@ public class TemplateFactory {
         }
         return singleton;
     }
-    private static String PATH = "src/main/resources";
+    private static final String defaultPath = "src/main/resources";
     private static Configuration cfg = null;
 
-    public void init(){
+    static {
         try {
             cfg = new Configuration(Configuration.VERSION_2_3_28);
-            cfg.setDirectoryForTemplateLoading(new File(PathKit.getRootPath()+"/"+PATH));
+            cfg.setDirectoryForTemplateLoading(new File(PathKit.getUserDir()+"/"+defaultPath));
+            cfg.setDefaultEncoding("UTF-8");
+            cfg.setTemplateExceptionHandler(TemplateExceptionHandler.RETHROW_HANDLER);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public void reConfig(String resource){
+        try {
+            if(null==resource){
+                resource = defaultPath;
+            }
+            cfg = new Configuration(Configuration.VERSION_2_3_28);
+            cfg.setDirectoryForTemplateLoading(new File(PathKit.getUserDir()+"/"+resource));
             cfg.setDefaultEncoding("UTF-8");
             cfg.setTemplateExceptionHandler(TemplateExceptionHandler.RETHROW_HANDLER);
         } catch (IOException e) {
@@ -33,7 +46,7 @@ public class TemplateFactory {
 
     public Configuration getCfg(){
         if(null == cfg){
-            init();
+            reConfig(null);
         }
         return cfg;
     }

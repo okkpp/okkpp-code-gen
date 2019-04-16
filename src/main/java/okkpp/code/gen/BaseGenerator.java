@@ -6,7 +6,9 @@ import okkpp.code.gen.template.TemplateFactory;
 import okkpp.code.gen.util.PathKit;
 
 import java.io.*;
+import java.util.HashMap;
 import java.util.Map;
+import java.util.Properties;
 
 public class BaseGenerator {
 
@@ -15,16 +17,30 @@ public class BaseGenerator {
     protected String className;
     protected Map<String, Object> data;
 
-    public void config(String template, String targetPackage, String className) {
-        this.template = template;
-        this.targetPackage = targetPackage;
-        this.className = className;
+    static {
+        Properties properties = new Properties();
+        try {
+            properties.load(new FileInputStream(new File(PathKit.getDefaultResourcesPath()+"jdbc.properties")));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        System.getProperties().putAll(properties);
+    }
+
+    public BaseGenerator(Properties properties){
+        this.template = properties.getProperty("template");
+        this.targetPackage = properties.getProperty("targetPackage");
+        this.className = properties.getProperty("className");
+        this.data = new HashMap<String, Object>();
+        data.putAll((Map)properties);
     }
 
     public void setData(Map<String, Object> data){
-        data.put("package", targetPackage);
-        data.put("className", className);
-        this.data = data;
+        this.data.putAll(data);
+    }
+
+    public void generateToFile() throws IOException, TemplateException {
+        generate(getFileWriter());
     }
 
     public void generate(Writer out) throws IOException, TemplateException {
@@ -33,7 +49,7 @@ public class BaseGenerator {
     }
 
     public Writer getFileWriter() throws FileNotFoundException {
-        String rootPath = PathKit.getRootPath();
+        String rootPath = PathKit.getUserDir();
         String targetPath = rootPath+"/src/main/java/"+targetPackage.replace(".", "/");
         File dir = new File(targetPath);
         if (!dir.exists()) {

@@ -1,17 +1,17 @@
-package ${package};
+package ${targetPackage};
 
 public class ${className} {
 
-<#list fields as row>
-    public ${row.type} ${row.name};
+<#list columns as row>
+    public ${row.type} ${row.camelField};
 </#list>
 
-<#list fields as row>
-    public ${row.type} get${row.name?capitalize}(){
-        return ${row.name};
+<#list columns as row>
+    public ${row.type} get${row.camelField?cap_first}(){
+        return ${row.camelField};
     }
-    public void set${row.name?capitalize}(${row.type} ${row.name}){
-        this.${row.name} = ${row.name};
+    public void set${row.camelField?cap_first}(${row.type} ${row.camelField}){
+        this.${row.camelField} = ${row.camelField};
     }
 </#list>
 }
