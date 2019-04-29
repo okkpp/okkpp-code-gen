@@ -17,17 +17,11 @@ public class BaseGenerator {
     protected String className;
     protected Map<String, Object> data;
 
-    static {
-        Properties properties = new Properties();
-        try {
-            properties.load(new FileInputStream(new File(PathKit.getDefaultResourcesPath()+"jdbc.properties")));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        System.getProperties().putAll(properties);
+    public BaseGenerator(Properties properties){
+        init(properties);
     }
 
-    public BaseGenerator(Properties properties){
+    protected void init(Properties properties){
         this.template = properties.getProperty("template");
         this.targetPackage = properties.getProperty("targetPackage");
         this.className = properties.getProperty("className");
@@ -35,6 +29,15 @@ public class BaseGenerator {
         data.putAll((Map)properties);
     }
 
+    public void setTemplate(String template) {
+        this.template = template;
+    }
+
+    public void addData(Map<String, Object> data){
+        this.data.putAll(data);
+    }
+
+    @Deprecated
     public void setData(Map<String, Object> data){
         this.data.putAll(data);
     }
@@ -49,7 +52,7 @@ public class BaseGenerator {
     }
 
     public Writer getFileWriter() throws FileNotFoundException {
-        String rootPath = PathKit.getUserDir();
+        String rootPath = PathKit.getDefaultRootPath();
         String targetPath = rootPath+"/src/main/java/"+targetPackage.replace(".", "/");
         File dir = new File(targetPath);
         if (!dir.exists()) {

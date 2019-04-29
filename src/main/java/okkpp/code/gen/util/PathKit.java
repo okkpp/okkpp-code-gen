@@ -4,17 +4,14 @@ import java.io.File;
 
 public class PathKit {
 
-    private static String webRootPath;
-
-    public static String getUserDir(){
-        return System.getProperty("user.dir");
-    }
+    private static String rootPath;
+    private static String defaultRootPath;
 
     public static String getRootPath(){
-        if (webRootPath == null) {
-            webRootPath = detectRootPath();
+        if (StringUtil.isEmpty(rootPath)) {
+            rootPath = detectRootPath();
         }
-        return webRootPath;
+        return rootPath;
     }
 
     private static String detectRootPath() {
@@ -26,12 +23,22 @@ public class PathKit {
         }
     }
 
-    public static String getDefaultResourcesPath(){
-        return getUserDir()+"/src/main/resources/";
+    public static String getUserDir(){
+        return System.getProperty("user.dir");
     }
 
-    public static void main(String[] args) {
-        System.out.println(PathKit.getRootPath());
-        System.out.println(System.getProperty("user.dir"));
+    public static String getDefaultRootPath() {
+        if (StringUtil.isEmpty(defaultRootPath)) {
+            defaultRootPath = getUserDir();
+        }
+        return defaultRootPath;
+    }
+
+    public static void setDefaultRootPath(String defaultRootPath) {
+        PathKit.defaultRootPath = defaultRootPath;
+    }
+
+    public static String getDefaultResourcesPath(){
+        return getDefaultRootPath()+"/src/main/resources/";
     }
 }

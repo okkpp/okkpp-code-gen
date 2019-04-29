@@ -23,7 +23,7 @@ public class TemplateFactory {
     static {
         try {
             cfg = new Configuration(Configuration.VERSION_2_3_28);
-            cfg.setDirectoryForTemplateLoading(new File(PathKit.getUserDir()+"/"+defaultPath));
+            cfg.setDirectoryForTemplateLoading(new File(PathKit.getDefaultRootPath()+"/"+defaultPath));
             cfg.setDefaultEncoding("UTF-8");
             cfg.setTemplateExceptionHandler(TemplateExceptionHandler.RETHROW_HANDLER);
         } catch (IOException e) {
@@ -36,7 +36,7 @@ public class TemplateFactory {
                 resource = defaultPath;
             }
             cfg = new Configuration(Configuration.VERSION_2_3_28);
-            cfg.setDirectoryForTemplateLoading(new File(PathKit.getUserDir()+"/"+resource));
+            cfg.setDirectoryForTemplateLoading(new File(PathKit.getDefaultRootPath()+"/"+resource));
             cfg.setDefaultEncoding("UTF-8");
             cfg.setTemplateExceptionHandler(TemplateExceptionHandler.RETHROW_HANDLER);
         } catch (IOException e) {
