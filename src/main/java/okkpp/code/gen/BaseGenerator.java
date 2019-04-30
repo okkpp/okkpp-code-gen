@@ -15,7 +15,7 @@ public class BaseGenerator {
     protected String template;
     protected String targetPackage;
     protected String className;
-    protected Map<String, Object> data;
+    protected Map<String, Object> data = new HashMap<String, Object>();
 
     public BaseGenerator(Properties properties){
         init(properties);
@@ -25,7 +25,6 @@ public class BaseGenerator {
         this.template = properties.getProperty("template");
         this.targetPackage = properties.getProperty("targetPackage");
         this.className = properties.getProperty("className");
-        this.data = new HashMap<String, Object>();
         data.putAll((Map)properties);
     }
 
